@@ -1,0 +1,3 @@
+module Pipes.Protolude (
+                       ) where
+
