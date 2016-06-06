@@ -8,7 +8,7 @@ import Data.Int as X
 import Data.Bits as X
 import Data.Word as X
 import Data.Bool as X
-import Data.Char as X
+import Data.Char as X (Char,ord,chr)
 import Data.Maybe as X hiding (fromJust)
 import Data.Either as X
 import Data.Tuple as X
@@ -27,7 +27,7 @@ import Control.Category as X (
 
 import Data.Eq as X
 import Data.Ord as X
-import Data.Monoid as X
+import Data.Monoid as X hiding (mconcat)
 import Data.Functor.Identity as X
 import Data.Functor as X (
     Functor(..)
@@ -85,6 +85,7 @@ import GHC.Generics (
 import Control.Monad.ST as X
 
 -- Concurrency and Parallelism
-import Control.Exception as X
+-- import Control.Exception as X hiding (Handler)
+-- TODO: This doesnt opperate well with the pipes ecosystem does pipes-safe fill the need of this package?
 import Control.Concurrent as X hiding (yield)
-import Control.Concurrent.Async.Lifted.Safe as X --TODO: Investigate if safe or nonsafe is needed
+import Control.Concurrent.Async as X --TODO: Investigate if safe or nonsafe is needed

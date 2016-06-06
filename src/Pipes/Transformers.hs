@@ -86,13 +86,3 @@ import Control.Monad.RWS.Strict as X (
   withRWST
                                      )
 
--- import Control.Monad.Trans.Maybe as X
-
--- import Control.Monad.Reader as X
-
--- import Control.Monad.State.Strict as X
-
--- import Control.Monad.Writer.Strict as X
-
--- import Control.Monad.RWS as X
-
