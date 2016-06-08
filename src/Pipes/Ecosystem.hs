@@ -124,3 +124,5 @@ import Pipes.Text as X hiding (
   dropWhile
                               )
 import Pipes.Text.IO as X
+
+import Pipes.Parse as X hiding (span,splitAt,groupBy,group)

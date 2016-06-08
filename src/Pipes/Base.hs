@@ -1,8 +1,9 @@
 module Pipes.Base (
-  module X
+  module X,
+  String
   ) where
 
- -- Base Types --
+-- Base Types --
 
 import Data.Int as X
 import Data.Bits as X
@@ -16,6 +17,8 @@ import Data.Tuple as X
 import Data.Function as X (
   const,
   flip,
+  ($),
+  (&),
   fix,
   on)
 import Control.Category as X (
@@ -32,9 +35,10 @@ import Data.Functor.Identity as X
 import Data.Functor as X (
     Functor(..)
   , ($>)
-  , (<$>)
   , void
   )
+import Data.Bifunctor as X
+import Control.Applicative as X
 
 -- Deepseq --
 
@@ -60,26 +64,7 @@ import GHC.Exts as X (
   )
 
 -- Generics
-import GHC.Generics (
-    Generic(..)
-  , Rep
-  , K1(..)
-  , M1(..)
-  , U1(..)
-  , V1
-  , D1
-  , C1
-  , S1
-  , (:+:)
-  , (:*:)
-  , NoSelector
-  , Rec0
-  , Par0
-  , Constructor(..)
-  , Selector(..)
-  , Arity(..)
-  , Fixity(..)
-  )
+import GHC.Generics as X (Generic(..))
 
 -- ST
 import Control.Monad.ST as X
@@ -89,3 +74,5 @@ import Control.Monad.ST as X
 -- TODO: This doesnt opperate well with the pipes ecosystem does pipes-safe fill the need of this package?
 import Control.Concurrent as X hiding (yield)
 import Control.Concurrent.Async as X --TODO: Investigate if safe or nonsafe is needed
+
+type String = [Char] -- BANSHED UNLOVED HELL SPAWN
