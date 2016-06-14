@@ -1,6 +1,7 @@
 module Pipes.Base (
   module X,
-  String
+  String,
+  FilePath
   ) where
 
 -- Base Types --
@@ -76,3 +77,4 @@ import Control.Concurrent as X hiding (yield)
 import Control.Concurrent.Async as X --TODO: Investigate if safe or nonsafe is needed
 
 type String = [Char] -- BANSHED UNLOVED HELL SPAWN
+type FilePath = String
