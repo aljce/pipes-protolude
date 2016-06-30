@@ -16,4 +16,4 @@ import Pipes.Monad as X
 
 import Pipes.Transformers as X
 
-import Pipes.Temporary as X
+-- import Pipes.Temporary as X

@@ -29,7 +29,7 @@ library
                      , deepseq >= 1.4
                      , mtl >= 2.2
                      , transformers >= 0.4
-                     , async >= 2.1
+                     , async
                      , foldl >= 1.2.1
                      , free >= 4.12
                      , pipes >= 4.1.9
