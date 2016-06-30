@@ -125,4 +125,6 @@ import Pipes.Text as X hiding (
                               )
 import Pipes.Text.IO as X
 
+import Pipes.Text.Encoding as X
+
 import Pipes.Parse as X hiding (span,splitAt,groupBy,group)
