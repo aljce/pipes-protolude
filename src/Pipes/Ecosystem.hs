@@ -58,12 +58,8 @@ import Pipes.Extras as X (
   scanM
                          )
 
-import Pipes.Group as X hiding (
-  groups,
-  groupsBy,
-  groupsBy',
-  chunksOf
-                               )
+import Pipes.Group as X
+
 import Control.Monad.Trans.Free as X
 
 import Pipes.Safe as X (
@@ -121,7 +117,11 @@ import Pipes.Text as X hiding (
   find,
   index,
   drop,
-  dropWhile
+  dropWhile,
+  groups,
+  groupsBy,
+  groupsBy',
+  chunksOf
                               )
 import Pipes.Text.IO as X
 
