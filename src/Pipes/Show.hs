@@ -3,7 +3,8 @@ module Pipes.Show (
   print
                   )where
 
-import TextShow as X hiding ()
+import TextShow as X
+import TextShow.Generic as X
 
 import Pipes
 
