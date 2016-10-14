@@ -1,5 +1,5 @@
 name:                pipes-protolude
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Alternate Prelude for the pipes ecosystem
 description:         Please see README.md
 homepage:            https://github.com/mckeankylej/pipes-protolude#readme
